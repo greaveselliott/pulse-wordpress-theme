@@ -1,0 +1,16 @@
+$pulse-magenta: #9e135d;
+$pulse-grey: #666666;
+
+.background-magenta {
+  background-color: $pulse-magenta !important;
+}
+.background-grey {
+  background-color: $pulse-grey !important;
+}
+
+.text-magenta {
+  color: $pulse-magenta !important;
+}
+.text-grey {
+  color: $pulse-grey !important;
+}

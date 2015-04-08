@@ -1,0 +1,840 @@
+/*
+Theme Name: Pulse Comms 2015
+Description: Theme modified for Pulse Comms
+Version: 1.0
+Author: Elliott Greaves
+Author URI: http://www.elliottgreaves.com
+Template: visia
+*/
+/*alignment inside post page content*/
+/* line 22, sass/_parent-style.scss */
+.alignright {
+  float: right;
+  clear: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 29, sass/_parent-style.scss */
+.alignleft {
+  float: left;
+  clear: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 36, sass/_parent-style.scss */
+.aligncenter {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+/* line 42, sass/_parent-style.scss */
+strong {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+/* line 47, sass/_parent-style.scss */
+cite, var, em {
+  font-style: italic;
+}
+
+/* line 54, sass/_parent-style.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 58, sass/_parent-style.scss */
+.pe-wp-default h1,
+div.post h1 a,
+.pe-wp-default a,
+.page-title h1 {
+  -moz-hyphens: auto;
+  word-wrap: break-word;
+}
+
+/* line 66, sass/_parent-style.scss */
+.format-aside {
+  border-left-width: 22px;
+  border-left-style: solid;
+  padding: 20px;
+}
+
+/* line 72, sass/_parent-style.scss */
+.sticky .post-title h1 {
+  padding: 20px 20px;
+}
+
+/*WPML*/
+/*drop list*/
+/* line 79, sass/_parent-style.scss */
+#lang_sel,
+#lang_sel_click {
+  height: 20px;
+  z-index: 2000;
+}
+
+/* line 85, sass/_parent-style.scss */
+#lang_sel_click img.iclflag {
+  float: left;
+  padding-top: 5px;
+  margin-right: 5px;
+}
+
+/* line 91, sass/_parent-style.scss */
+#lang_sel_click ul ul img.iclflag {
+  padding-top: 0px;
+  top: 2px;
+  margin-right: 0;
+}
+
+/* line 97, sass/_parent-style.scss */
+#lang_sel ul ul li a:hover,
+#lang_sel ul ul li,
+#lang_sel ul ul li a:hover span {
+  color: #666;
+}
+
+/* line 103, sass/_parent-style.scss */
+#lang_sel ul ul li:hover a,
+#lang_sel_click ul ul li:hover a {
+  color: #666;
+  background-color: #fff;
+}
+
+/* line 109, sass/_parent-style.scss */
+#lang_sel a,
+#lang_sel a:visited {
+  border-color: #e9e9e9;
+}
+
+/* line 114, sass/_parent-style.scss */
+.sidebar #lang_sel li {
+  width: 100%;
+}
+
+/* line 118, sass/_parent-style.scss */
+.sidebar #lang_sel {
+  display: block;
+  height: 34px;
+}
+
+/* line 123, sass/_parent-style.scss */
+#lang_sel ul ul a,
+#lang_sel ul ul a:visited,
+#lang_sel_click ul ul a,
+#lang_sel_click ul ul a:visited {
+  background-color: #fff;
+  border-color: #e9e9e9;
+  color: #666;
+}
+
+/* line 133, sass/_parent-style.scss */
+.widget #lang_sel ul ul a,
+.widget #lang_sel ul ul a:visited,
+.widget #lang_sel a.lang_sel_sel,
+.widget #lang_sel_click ul ul a,
+.widget #lang_sel_click ul ul a:visited,
+.widget #lang_sel_click a.lang_sel_sel {
+  background-color: #fff;
+  border-color: #e9e9e9;
+  color: #666;
+}
+
+/* line 146, sass/_parent-style.scss */
+.widget #lang_sel ul ul a {
+  padding: 8px;
+  display: block;
+}
+
+/* line 151, sass/_parent-style.scss */
+.widget #lang_sel a.lang_sel_sel:hover,
+.widget #lang_sel ul ul li:hover a,
+.widget #lang_sel_click a.lang_sel_sel:hover,
+.widget #lang_sel_click ul ul li:hover a {
+  background-color: #fdfdfd;
+  border-color: #e9e9e9;
+  color: #666;
+}
+
+/* line 160, sass/_parent-style.scss */
+.widget #lang_sel ul ul li:hover a span {
+  color: #666 !important;
+}
+
+/* line 164, sass/_parent-style.scss */
+.widget #lang_sel ul ul li:hover,
+.widget #lang_sel ul ul li:hover a {
+  border-color: #e9e9e9;
+}
+
+/* line 169, sass/_parent-style.scss */
+.widget #lang_sel a.lang_sel_sel {
+  padding: 4px 4px 4px 8px;
+}
+
+/* line 174, sass/_parent-style.scss */
+#lang_sel ul ul,
+#lang_sel_click ul ul {
+  border-top-color: #777;
+}
+
+/* line 179, sass/_parent-style.scss */
+.widget #lang_sel ul ul a,
+#lang_sel ul ul a,
+#lang_sel_click ul ul a {
+  line-height: 16px !important;
+}
+
+/* line 185, sass/_parent-style.scss */
+#lang_sel ul ul, #lang_sel_click ul ul {
+  border-top-color: #e9e9e9;
+}
+
+/*#lang_sel ul ul:hover{
+	border-top-color:#666;
+}*/
+/* line 193, sass/_parent-style.scss */
+#lang_sel,
+#lang_sel_click {
+  z-index: 1990;
+}
+
+/* line 198, sass/_parent-style.scss */
+.sidebar #lang_sel ul ul {
+  top: 33px;
+  width: 100%;
+}
+
+/* line 203, sass/_parent-style.scss */
+#lang_sel ul ul a:hover {
+  background-color: #fff;
+  color: #666;
+}
+
+/* line 208, sass/_parent-style.scss */
+#lang_sel a span.icl_lang_sel_current {
+  /*color:#c0c0c0 !important;*/
+  display: inline;
+}
+
+/* line 213, sass/_parent-style.scss */
+#lang_sel a span {
+  font-style: normal;
+  color: #444;
+  font-size: 11px;
+  display: inline;
+}
+
+/*normal list*/
+/* line 222, sass/_parent-style.scss */
+#lang_sel {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 400;
+}
+
+/* line 227, sass/_parent-style.scss */
+#lang_sel a {
+  font-size: 12px;
+}
+
+/* line 231, sass/_parent-style.scss */
+#lang_sel a.lang_sel_sel,
+#lang_sel_click a.lang_sel_sel {
+  background-color: #fff;
+  background-position: 90% 50%;
+  color: #666;
+  border-color: #e9e9e9;
+}
+
+/* line 239, sass/_parent-style.scss */
+#lang_sel a.lang_sel_sel:hover,
+#lang_sel_click a.lang_sel_sel:hover {
+  color: #666;
+  background-color: #fff;
+}
+
+/* line 245, sass/_parent-style.scss */
+#lang_sel_list {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: auto;
+}
+
+/* line 252, sass/_parent-style.scss */
+#lang_sel_list ul {
+  width: auto;
+  border: none;
+}
+
+/* line 257, sass/_parent-style.scss */
+#lang_sel_list li {
+  width: auto;
+}
+
+/* line 261, sass/_parent-style.scss */
+#lang_sel_list a, #lang_sel_list a:visited {
+  border: none;
+}
+
+/* line 265, sass/_parent-style.scss */
+#lang_sel img.iclflag {
+  display: inline;
+  top: 0;
+  margin-right: 3px;
+}
+
+/* line 271, sass/_parent-style.scss */
+#lang_sel_list a.lang_sel_sel,
+#lang_sel_list a span {
+  color: #c2c2c2 !important;
+}
+
+/* line 276, sass/_parent-style.scss */
+#lang_sel_list a:hover span {
+  color: #D73300 !important;
+}
+
+/* line 280, sass/_parent-style.scss */
+#lang_sel_list a span.icl_lang_sel_current,
+#lang_sel_list a:hover span.icl_lang_sel_current {
+  color: #333 !important;
+  cursor: default;
+}
+
+/* line 286, sass/_parent-style.scss */
+.pe-wpml-lang-selector {
+  position: absolute;
+  margin-left: 35px;
+  top: 16px;
+  display: inline-block;
+}
+
+/*media query to hide language names in iphone portrait and leave only flags*/
+@media (max-width: 479px) {
+  /* line 295, sass/_parent-style.scss */
+  nav #lang_sel a span.icl_lang_sel_current {
+    display: none;
+  }
+
+  /* line 299, sass/_parent-style.scss */
+  nav #lang_sel a.lang_sel_sel,
+  nav #lang_sel_click a.lang_sel_sel {
+    width: 38px;
+    padding-left: 6px;
+  }
+
+  /* line 305, sass/_parent-style.scss */
+  nav #lang_sel li {
+    width: auto;
+  }
+
+  /* line 309, sass/_parent-style.scss */
+  nav #lang_sel ul ul a,
+  nav #lang_sel_click ul ul a,
+  nav #lang_sel_click ul ul {
+    width: 38px;
+    padding-left: 4px;
+  }
+
+  /* line 316, sass/_parent-style.scss */
+  nav #lang_sel ul ul a,
+  nav #lang_sel_click ul ul a {
+    height: 26px;
+  }
+
+  /* line 321, sass/_parent-style.scss */
+  nav #lang_sel ul ul {
+    width: 38px;
+  }
+
+  /* line 325, sass/_parent-style.scss */
+  nav #lang_sel a span {
+    font-size: 6px;
+    display: none;
+    color: #fff;
+  }
+
+  /* line 331, sass/_parent-style.scss */
+  nav #lang_sel a.lang_sel_sel {
+    background-position: 100% 90%;
+  }
+}
+/* Responsive images */
+/* line 339, sass/_parent-style.scss */
+.pe-wp-default img,
+.pe-wp-default .comment-body img {
+  max-width: 100%;
+}
+
+/* line 343, sass/_parent-style.scss */
+.pe-wp-default img[class*="align"],
+.pe-wp-default img[class*="wp-image-"],
+.pe-wp-default img[class*="attachment-"] {
+  height: auto;
+}
+
+/* line 348, sass/_parent-style.scss */
+.pe-wp-default img.size-full,
+.pe-wp-default img.size-large,
+.pe-wp-default img.header-image,
+.pe-wp-default img.wp-post-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 356, sass/_parent-style.scss */
+.pe-wp-default .wp-caption {
+  max-width: 100%;
+  padding: 4px;
+}
+
+/* line 360, sass/_parent-style.scss */
+.pe-wp-default .wp-caption .wp-caption-text,
+.pe-wp-default .gallery-caption,
+.pe-wp-default .entry-caption {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* line 368, sass/_parent-style.scss */
+.pe-wp-default .wp-caption .wp-caption-text > a,
+.pe-wp-default .gallery-caption > a,
+.pe-wp-default .entry-caption > a {
+  text-decoration: underline;
+}
+
+/* line 374, sass/_parent-style.scss */
+.pe-wp-default .gallery-item {
+  margin: 0;
+}
+
+/* line 378, sass/_parent-style.scss */
+.pe-wp-default .gallery-item > .gallery-icon > a > img {
+  display: inline;
+}
+
+/* line 382, sass/_parent-style.scss */
+.pe-wp-default .gallery-item a,
+.pe-wp-default .gallery-caption {
+  width: 90%;
+}
+
+/* line 386, sass/_parent-style.scss */
+.pe-wp-default .gallery-item a {
+  display: block;
+}
+
+/* line 389, sass/_parent-style.scss */
+.pe-wp-default .gallery-caption a {
+  display: inline;
+}
+
+/* line 392, sass/_parent-style.scss */
+.pe-wp-default .gallery-columns-1 .gallery-item a {
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 396, sass/_parent-style.scss */
+.pe-wp-default .gallery .gallery-icon img {
+  height: auto;
+  max-width: 90%;
+  padding: 5%;
+}
+
+/* line 401, sass/_parent-style.scss */
+.pe-wp-default .gallery-columns-1 .gallery-icon img {
+  padding: 3%;
+}
+
+/*tables*/
+/* line 407, sass/_parent-style.scss */
+.pe-wp-default table,
+.pe-wp-default .comment-body table {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  font-size: 12px;
+  line-height: 2;
+  margin: 0 0 24px;
+  width: 100%;
+}
+
+/* line 417, sass/_parent-style.scss */
+.pe-wp-default th {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2.18182;
+  text-transform: uppercase;
+}
+
+/* line 424, sass/_parent-style.scss */
+.pe-wp-default td, .pe-wp-default .comment-body td {
+  border-top-width: 1px;
+  border-top-style: solid;
+  padding: 6px 10px 6px 0;
+}
+
+/* line 430, sass/_parent-style.scss */
+.pe-wp-default caption, .pe-wp-default th, .pe-wp-default td {
+  font-size: 12px;
+  text-align: left;
+}
+
+/*definition lists*/
+/* line 437, sass/_parent-style.scss */
+.pe-wp-default dl, .pe-wp-default .comment-body dl {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* line 442, sass/_parent-style.scss */
+.pe-wp-default dt, .pe-wp-default .comment-body dt {
+  font-weight: bold;
+  line-height: 22px;
+}
+
+/* line 447, sass/_parent-style.scss */
+.pe-wp-default dd, .pe-wp-default .comment-body dd {
+  line-height: 22px;
+  margin-bottom: 22px;
+}
+
+/*Lists*/
+/* line 454, sass/_parent-style.scss */
+.pe-wp-default ul, .pe-wp-default .comment-body ul, .pe-wp-default .mu_register ul {
+  list-style: disc outside none;
+}
+
+/* line 458, sass/_parent-style.scss */
+.pe-wp-default ol, .pe-wp-default .comment-body ol {
+  list-style: decimal outside none;
+}
+
+/* line 462, sass/_parent-style.scss */
+.pe-wp-default ol, .pe-wp-default .comment-body ol, .pe-wp-default ul, .pe-wp-default .comment-body ul, .pe-wp-default .mu_register ul {
+  line-height: 22px;
+  margin: 0 0 20px;
+}
+
+/* line 467, sass/_parent-style.scss */
+.pe-wp-default li, .pe-wp-default .comment-body li, .pe-wp-default .mu_register li {
+  margin: 0 0 0 30px;
+}
+
+/* line 471, sass/_parent-style.scss */
+.pe-wp-default ul ul, .pe-wp-default .comment-body ul ul, .pe-wp-default ol ol, .pe-wp-default .comment-body ol ol, .pe-wp-default ul ol, .pe-wp-default .comment-body ul ol, .pe-wp-default ol ul, .pe-wp-default .comment-body ol ul {
+  margin-bottom: 0;
+}
+
+/*html tags*/
+/* line 477, sass/_parent-style.scss */
+.pe-wp-default address, .pe-wp-default .comment-body address {
+  display: block;
+  line-height: 22px;
+  margin: 0 0 22px;
+  font-style: italic;
+}
+
+/* line 485, sass/_parent-style.scss */
+.pe-wp-default abbr, .pe-wp-default .comment-body abbr, .pe-wp-default dfn, .pe-wp-default .comment-body dfn, .pe-wp-default acronym, .pe-wp-default .comment-body acronym {
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  cursor: help;
+}
+
+/* line 492, sass/_parent-style.scss */
+.pe-wp-default code, .pe-wp-default .comment-body code,
+.pe-wp-default kbd, .pe-wp-default tt {
+  font-family: Consolas,Monaco,Lucida Console,monospace;
+  font-size: 11px;
+  line-height: 2;
+}
+
+/* line 499, sass/_parent-style.scss */
+.pe-wp-default pre, .pe-wp-default .comment-body pre {
+  border-width: 1px;
+  border-style: solid;
+  font-family: Consolas,Monaco,Lucida Console,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 20px 0;
+  overflow: auto;
+  padding: 20px;
+}
+
+/* line 510, sass/_parent-style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 514, sass/_parent-style.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 518, sass/_parent-style.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 525, sass/_parent-style.scss */
+.pe-wp-default embed,
+.pe-wp-default iframe,
+.pe-wp-default object,
+.pe-wp-default video {
+  max-width: 100%;
+}
+
+/* line 531, sass/_parent-style.scss */
+.pe-wp-default .twitter-tweet-rendered {
+  max-width: 100% !important;
+  /* Override the Twitter embed fixed width */
+}
+
+/* line 536, sass/_parent-style.scss */
+.pe-wp-default h1 {
+  font-size: 30px;
+}
+
+/* line 540, sass/_parent-style.scss */
+.page-links {
+  float: left;
+  clear: both;
+  margin-bottom: 20px;
+}
+
+/* line 546, sass/_parent-style.scss */
+.page-links > a {
+  padding: 2px 5px;
+}
+
+/* line 550, sass/_parent-style.scss */
+.post.format-aside {
+  border-top: none;
+}
+
+/* to go on top of wp admin bar */
+/* line 555, sass/_parent-style.scss */
+.peFlareLightbox {
+  z-index: 99999 !important;
+}
+
+/* line 558, sass/_parent-style.scss */
+.ticker h1 {
+  height: 100%;
+}
+
+/* line 561, sass/_parent-style.scss */
+.ticker {
+  height: 230px;
+}
+
+/* line 4, sass/_colours.scss */
+.background-magenta {
+  background-color: #9e135d !important;
+}
+
+/* line 7, sass/_colours.scss */
+.background-grey {
+  background-color: #666666 !important;
+}
+
+/* line 11, sass/_colours.scss */
+.text-magenta {
+  color: #9e135d !important;
+}
+
+/* line 14, sass/_colours.scss */
+.text-grey {
+  color: #666666 !important;
+}
+
+/* line 1, sass/_utility-classes.scss */
+.display-none {
+  display: none;
+}
+
+/* line 2, sass/_utility-classes.scss */
+.display-none-important {
+  display: none !important;
+}
+
+/* line 1, sass/_template-services.scss */
+.slick-list {
+  background-color: white;
+}
+
+/* line 6, sass/_template-services.scss */
+.slick-dots li {
+  float: none;
+  display: inline-block;
+  width: 16.6666666667%;
+}
+@media only screen and (max-width: 959px) {
+  /* line 6, sass/_template-services.scss */
+  .slick-dots li {
+    width: 33.3333333333%;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 6, sass/_template-services.scss */
+  .slick-dots li {
+    width: 50%;
+  }
+}
+/* line 18, sass/_template-services.scss */
+.slick-dots li .customSlickButton1 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: visible;
+}
+/* line 24, sass/_template-services.scss */
+.slick-dots li .customSlickButton1 .feature-icon.feature:hover {
+  color: #9e135d;
+}
+/* line 29, sass/_template-services.scss */
+.slick-dots li.slick-active .feature-icon.feature {
+  background: #fff;
+  color: #9e135d;
+}
+
+/* line 41, sass/_template-services.scss */
+.slick-prev {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+}
+
+/* line 47, sass/_template-services.scss */
+.slick-next {
+  position: absolute;
+  right: 70px;
+  top: 50%;
+}
+
+/* line 53, sass/_template-services.scss */
+.info-box {
+  padding: 30px 20%;
+  font-size: 16px;
+  font-size: calculateRem(16px);
+}
+
+/* line 59, sass/_template-services.scss */
+.services-inner-carousel_slide p {
+  color: #666666;
+}
+
+/* Slider */
+/* line 3, sass/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 18, sass/_slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 25, sass/_slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+/* line 29, sass/_slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 34, sass/_slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 43, sass/_slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+/* line 49, sass/_slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 55, sass/_slick.scss */
+.slick-track:after {
+  clear: both;
+}
+/* line 59, sass/_slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 63, sass/_slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+/* line 67, sass/_slick.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+/* line 70, sass/_slick.scss */
+.slick-slide img {
+  display: block;
+}
+/* line 73, sass/_slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+/* line 79, sass/_slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 83, sass/_slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 87, sass/_slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 91, sass/_slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
