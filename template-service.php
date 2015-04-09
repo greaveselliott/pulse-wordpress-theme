@@ -2,7 +2,9 @@
     <div class="slideContent">
         <div class="info-box">
             <p class="text-magenta"><?php the_field('info_box');?></p>
+            <span class="border background-grey"></span>
         </div>
+
         <div class="services-inner-carousel">
            <?php
            if( have_rows('sectioned_content') ):
@@ -20,7 +22,7 @@
         </div>
     </div>
     <!-- Slide Dot -->
-    <div class="animated entrance customSlickButton1 display-none" data-appear-bottom-offset="100" style="background-color: pink !important;">
+    <div class="animated entrance customSlickButton1 display-none" data-appear-bottom-offset="100">
         <span class="feature-icon feature">
             <i class="icon-<?php the_field('icon');?>"></i>
         </span>

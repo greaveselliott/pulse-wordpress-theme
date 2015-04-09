@@ -1,7 +1,9 @@
+.services-carousel {
 .slick-list {
-  background-color: white;
 }
+.services-carousel_slide {
 
+}
 .slick-dots {
   li {
     float: none;
@@ -18,11 +20,18 @@
     .customSlickButton1 {
       position: relative;
       width: 100%;
-
+      height: 100%;
       text-align: center;
       overflow: visible;
-      .feature-icon.feature:hover {
-        color: $pulse-magenta;
+      .feature-icon.feature,h4 {
+          pointer-events: none;
+      }
+      &:hover {
+        cursor: pointer;
+        .feature-icon.feature {
+          background: #fff;
+          color: $pulse-magenta;
+        }
       }
     }
     &.slick-active {
@@ -37,26 +46,87 @@
 .slideContent {
 
 }
-
-.slick-prev {
+.slick-prev, .slick-next {
+  @include fontSize(30px);
   position: absolute;
+  bottom: 20%;
+  @media only screen and (max-width:959px) {
+    bottom: 38%;
+  }
+  color: $pulse-magenta;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.slick-prev {
   left: 70px;
-  top: 50%;
+  @media only screen and (max-width:959px) {
+    left: 40px;
+  }
 }
 
 .slick-next {
-  position: absolute;
   right: 70px;
-  top: 50%;
+  @media only screen and (max-width:959px) {
+    right: 40px;
+  }
+}
 }
 
 .info-box {
-  padding: 30px 20%;
+  padding: 40px 25%;
+  text-align: justify;
   @include fontSize(16px);
+  @media only screen and (max-width:959px) {
+    padding: 50px 50px;
+  }
 }
 
-.services-inner-carousel_slide {
-  p {
-    color: $pulse-grey;
+.services-inner-carousel {
+  .services-inner-carousel_slide {
+    p {
+      text-align: justify;
+      padding: 30px 15%;
+      color: $pulse-grey;
+      @include fontSize(16px);
+      margin: 0;
+    }
+  }
+  .slick-dots {
+    padding: 0px 6%;
+    li {
+      display: inline-block;
+      width: auto;
+      padding: 0 20px;
+      margin-top: 20px;
+      border-right: solid 2px $pulse-magenta;
+      @media only screen and (max-width:959px) {
+        margin: 7px 0px;
+      }
+      @media only screen and (max-width:767px) {
+        width: 100%;
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+        display: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+      &.slick-active {
+        @media only screen and (max-width:767px) {
+          display: inline-block;
+        }
+        .customSlickButton2 {
+          color: $pulse-magenta;
+        }
+      }
+      .customSlickButton2 {
+        @include fontSize(16px);
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }

@@ -40,3 +40,39 @@ function enqueue_slickjs_scripts () {
     wp_enqueue_script ('full-screen-js-config');
 }
 add_action('wp_enqueue_scripts','enqueue_slickjs_scripts');
+
+
+// GSAP
+function enqueue_gsap_lite_scripts () {
+    // CSS Plugin
+    wp_register_script(
+        'gsap-css-plugin',
+        get_stylesheet_directory_uri() . '/javascripts/gsap/plugins/CSSPlugin.min.js',
+        array('jquery'),
+        '',
+        true
+    );
+    wp_enqueue_script ('gsap-css-plugin');
+
+    // Ease Pack
+    wp_register_script(
+        'gsap-ease-pack',
+        get_stylesheet_directory_uri() . '/javascripts/gsap/easing/EasePack.min.js',
+        array('jquery','gsap-css-plugin'),
+        '',
+        true
+    );
+    wp_enqueue_script ('gsap-ease-pack');
+
+    // TweenLite
+    wp_register_script(
+        'gsap-tween-lite',
+        get_stylesheet_directory_uri() . '/javascripts/gsap/TweenLite.min.js',
+        array('jquery','gsap-css-plugin','gsap-ease-pack'),
+        '',
+        true
+    );
+    wp_enqueue_script ('gsap-tween-lite');
+}
+add_action('wp_enqueue_scripts','enqueue_gsap_lite_scripts');
+

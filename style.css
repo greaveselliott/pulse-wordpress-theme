@@ -667,71 +667,163 @@ sub, sup {
   display: none !important;
 }
 
-/* line 1, sass/_template-services.scss */
-.slick-list {
-  background-color: white;
-}
-
-/* line 6, sass/_template-services.scss */
-.slick-dots li {
+/* line 8, sass/_template-services.scss */
+.services-carousel .slick-dots li {
   float: none;
   display: inline-block;
   width: 16.6666666667%;
 }
 @media only screen and (max-width: 959px) {
-  /* line 6, sass/_template-services.scss */
-  .slick-dots li {
+  /* line 8, sass/_template-services.scss */
+  .services-carousel .slick-dots li {
     width: 33.3333333333%;
     margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 6, sass/_template-services.scss */
-  .slick-dots li {
+  /* line 8, sass/_template-services.scss */
+  .services-carousel .slick-dots li {
     width: 50%;
   }
 }
-/* line 18, sass/_template-services.scss */
-.slick-dots li .customSlickButton1 {
+/* line 20, sass/_template-services.scss */
+.services-carousel .slick-dots li .customSlickButton1 {
   position: relative;
   width: 100%;
+  height: 100%;
   text-align: center;
   overflow: visible;
 }
-/* line 24, sass/_template-services.scss */
-.slick-dots li .customSlickButton1 .feature-icon.feature:hover {
-  color: #9e135d;
+/* line 26, sass/_template-services.scss */
+.services-carousel .slick-dots li .customSlickButton1 .feature-icon.feature, .services-carousel .slick-dots li .customSlickButton1 h4 {
+  pointer-events: none;
 }
 /* line 29, sass/_template-services.scss */
-.slick-dots li.slick-active .feature-icon.feature {
+.services-carousel .slick-dots li .customSlickButton1:hover {
+  cursor: pointer;
+}
+/* line 31, sass/_template-services.scss */
+.services-carousel .slick-dots li .customSlickButton1:hover .feature-icon.feature {
   background: #fff;
   color: #9e135d;
 }
-
-/* line 41, sass/_template-services.scss */
-.slick-prev {
+/* line 38, sass/_template-services.scss */
+.services-carousel .slick-dots li.slick-active .feature-icon.feature {
+  background: #fff;
+  color: #9e135d;
+}
+/* line 49, sass/_template-services.scss */
+.services-carousel .slick-prev, .services-carousel .slick-next {
+  font-size: 30px;
+  font-size: calculateRem(30px);
   position: absolute;
+  bottom: 20%;
+  color: #9e135d;
+}
+@media only screen and (max-width: 959px) {
+  /* line 49, sass/_template-services.scss */
+  .services-carousel .slick-prev, .services-carousel .slick-next {
+    bottom: 38%;
+  }
+}
+/* line 57, sass/_template-services.scss */
+.services-carousel .slick-prev:hover, .services-carousel .slick-next:hover {
+  cursor: pointer;
+}
+/* line 61, sass/_template-services.scss */
+.services-carousel .slick-prev {
   left: 70px;
-  top: 50%;
 }
-
-/* line 47, sass/_template-services.scss */
-.slick-next {
-  position: absolute;
+@media only screen and (max-width: 959px) {
+  /* line 61, sass/_template-services.scss */
+  .services-carousel .slick-prev {
+    left: 40px;
+  }
+}
+/* line 68, sass/_template-services.scss */
+.services-carousel .slick-next {
   right: 70px;
-  top: 50%;
+}
+@media only screen and (max-width: 959px) {
+  /* line 68, sass/_template-services.scss */
+  .services-carousel .slick-next {
+    right: 40px;
+  }
 }
 
-/* line 53, sass/_template-services.scss */
+/* line 76, sass/_template-services.scss */
 .info-box {
-  padding: 30px 20%;
+  padding: 40px 25%;
+  text-align: justify;
   font-size: 16px;
   font-size: calculateRem(16px);
 }
+@media only screen and (max-width: 959px) {
+  /* line 76, sass/_template-services.scss */
+  .info-box {
+    padding: 50px 50px;
+  }
+}
 
-/* line 59, sass/_template-services.scss */
-.services-inner-carousel_slide p {
+/* line 87, sass/_template-services.scss */
+.services-inner-carousel .services-inner-carousel_slide p {
+  text-align: justify;
+  padding: 30px 15%;
   color: #666666;
+  font-size: 16px;
+  font-size: calculateRem(16px);
+  margin: 0;
+}
+/* line 95, sass/_template-services.scss */
+.services-inner-carousel .slick-dots {
+  padding: 0px 6%;
+}
+/* line 97, sass/_template-services.scss */
+.services-inner-carousel .slick-dots li {
+  display: inline-block;
+  width: auto;
+  padding: 0 20px;
+  margin-top: 20px;
+  border-right: solid 2px #9e135d;
+}
+@media only screen and (max-width: 959px) {
+  /* line 97, sass/_template-services.scss */
+  .services-inner-carousel .slick-dots li {
+    margin: 7px 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 97, sass/_template-services.scss */
+  .services-inner-carousel .slick-dots li {
+    width: 100%;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+  }
+}
+/* line 113, sass/_template-services.scss */
+.services-inner-carousel .slick-dots li:last-child {
+  border-right: none;
+}
+@media only screen and (max-width: 767px) {
+  /* line 116, sass/_template-services.scss */
+  .services-inner-carousel .slick-dots li.slick-active {
+    display: inline-block;
+  }
+}
+/* line 120, sass/_template-services.scss */
+.services-inner-carousel .slick-dots li.slick-active .customSlickButton2 {
+  color: #9e135d;
+}
+/* line 124, sass/_template-services.scss */
+.services-inner-carousel .slick-dots li .customSlickButton2 {
+  font-size: 16px;
+  font-size: calculateRem(16px);
+}
+/* line 127, sass/_template-services.scss */
+.services-inner-carousel .slick-dots li:hover {
+  cursor: pointer;
 }
 
 /* Slider */
