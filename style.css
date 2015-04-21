@@ -930,3 +930,8 @@ sub, sup {
   height: auto;
   border: 1px solid transparent;
 }
+
+/* line 1, sass/_the-team.scss */
+#the-team, #the-team-2 {
+  max-width: none !important;
+}
